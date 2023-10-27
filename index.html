@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WORK</title>
+        <link rel="stylesheet" href="style.css">
+        <script>
+            function setName() {
+                const nameField = document.getElementById("username");
+                const name =  nameField.value;
+                const title = document.getElementById("profile-link");
+                title.innerText = name + " Profile";
+            }
+
+            function setImage() {
+                const profileImage = document.getElementById("profile-pic").value;
+                document.getElementById("profileImg").style.backgroundImage = 'url(' + profileImage + ')';
+                document.getElementById("profile-pic").value = '';
+            }
+        </script>
+    </head>
+    <body>
+        <main>
+            <div id="profileImg" class="parent">
+                <div class="child"></div>
+            </div>
+            <a id="profile-link" href="https://github.com/298Patteera">Chongyun<a>
+            <div class="row">
+                <p>set username</p>
+                <input id="username" type="text">
+                <button onclick="setName()">click</button>
+            </div>
+            <div class="row">
+                <p>set profile pic</p>
+                <input id="profileImg" type="text">
+                <button onclick="setImage()">click</button>
+            </div>
+            <br>
+            <div class="gallery">
+                <div id="extend-col" class="image"></div>
+                <div class="image1"></div>
+                <div class="image2"></div>
+                <div class="image3"></div>
+                <div id="extend-row" class="image"></div>
+                <div class="image4"></div>
+                <div class="image5"></div>
+                <div class="image6"></div>
+                <div class="image7"></div>
+                <div class="image8"></div>
+            </div>
+        </main>
+    </body>
+</html>
